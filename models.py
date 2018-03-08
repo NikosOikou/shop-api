@@ -40,6 +40,8 @@ class Order(db.Model):
     """
     Create an Order table
     """
+    __tablename__ = 'orders'
+
     id = db.Column(db.Integer, primary_key=True)
     customer_id = db.Column(db.Integer, db.ForeignKey('customers.id'), nullable=False)
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)

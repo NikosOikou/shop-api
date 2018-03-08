@@ -1,7 +1,7 @@
 from flask import Flask, abort
 from flask_restful import Api, Resource, fields, marshal_with, reqparse
 
-from models import Customer, connect_to_db, db, Order, Product
+from models import Customer, Order, Product, connect_to_db, db
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

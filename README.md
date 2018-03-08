@@ -9,14 +9,14 @@ A dumbed down, online shop REST API that performs CRUD operations on a SQLite da
 ## Using the api:
 To access the api from the command line:
 
-GET request (for task with id 1):
+GET request (for customer with id 1):
 ```
-curl http://localhost:5000/shop/1
+curl http://localhost:5000/customer/1
 ```
 
-POST request:
+POST request (for customer with name 'John')
 ```
-curl http://localhost:5000/shop/ -X POST -H "Content-Type:application/json" -d '{"name":"John"}'
+curl http://localhost:5000/customer/ -X POST -H "Content-Type:application/json" -d '{"name":"John"}'
 ```
 
 ## Tests

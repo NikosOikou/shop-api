@@ -1,7 +1,7 @@
 import json
 import unittest
 
-from models import Customer, connect_to_db, db, Order, Product
+from models import Customer, Order, Product, connect_to_db, db
 from shop import app
 
 
